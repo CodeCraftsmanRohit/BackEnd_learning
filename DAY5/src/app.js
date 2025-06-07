@@ -14,6 +14,14 @@ app.use(express.static("public"))//It serves static files like
 app.use(cookieParser())//It lets you read cookies from the req.cookies object.
 
 
+//routes
+
+import userRouter from './routes/user.routes.js'
+
+
+//routes declaration
+
+app.use("/api/v1/users",userRouter)
 
 
 export {app}
