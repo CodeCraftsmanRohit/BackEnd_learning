@@ -26,3 +26,6 @@ import fs from "fs";
         return null;
     }
 }
+
+
+export { uploadOnCloudinary }
